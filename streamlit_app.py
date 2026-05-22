@@ -1,7 +1,7 @@
 import requests
 import streamlit as st
 
-API_URL = st.sidebar.text_input("API base URL", "http://localhost:8000")
+API_URL = st.sidebar.text_input("API base URL", "https://kashan425-salary-prediction-backend.hf.space")
 WORKCLASS_OPTIONS = [
     "Federal-gov",
     "Local-gov",
