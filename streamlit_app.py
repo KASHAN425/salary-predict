@@ -154,7 +154,7 @@ def prediction_form() -> None:
             response = requests.post(f"{API_URL}/predict", json=payload, timeout=10)
             response.raise_for_status()
             result = response.json()
-            if result['prediction'] == 0:
+            if result['prediction'] == "0":
                 st.success("Predicted income : >=50")
             else: 
                 st.success(f"Predicted income: {result['prediction']}")
